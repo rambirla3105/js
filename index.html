@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Practice</title>
+    <script href="script.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            background-color: lightblue;
+            margin: 10px 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-heading">DOM Learning Playground</h1>
+
+    <p class="description">
+        Click buttons and see how JavaScript manipulates the DOM.
+    </p>
+
+    <!-- Buttons -->
+    <button id="changeTextBtn">Change Text</button>
+    <button id="toggleBoxBtn">Toggle Box</button>
+    <button id="colorBtn">Change Color</button>
+
+    <!-- Box -->
+    <div class="box" id="box"></div>
+
+    <!-- Input -->
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button id="showNameBtn">Show Name</button>
+
+    <p id="output"></p>
+
+    <!-- List -->
+    <h3>Students</h3>
+    <ul id="studentList">
+        <li>Ram</li>
+        <li>Sandeep</li>
+        <li>Sameer</li>
+    </ul>
+
+    <button id="addStudentBtn">Add Student</button>
+
+    <!-- JS File -->
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
