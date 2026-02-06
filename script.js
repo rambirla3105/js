@@ -1,29 +1,17 @@
-let button = document.querySelector("#changeTextBtn");
-let button2 = document.querySelector("#toggleBoxBtn");
-let button3 = document.querySelector("#colorBtn");
-let h1 = document.querySelector("h1");
-let addstd = document.querySelector("#addStudentBtn");
-let ul = document.querySelector("ul");
+let button = document.querySelector("button");
 
-function buttonClick(){
-    
-    h1.innerText = "kardia click gandu";
-};
-
-
-button.onclick = buttonClick;
-
-button2.addEventListener("click", function(){
-    h1.innerText = "heheheeee";
+button.addEventListener("click", function(){
+   let h1 = document.querySelector("h1");
+   h1.innerText = `${generate()}`;
+   let div = document.querySelector("div");
+   div.style.backgroundColor = generate();
 });
 
-button3.addEventListener("click", function(){
-    h1.innerText = "laalalalala";
-});
+function generate(){
+    let red = Math.floor(Math.random() * 255);
+    let green = Math.floor(Math.random() * 255);
+    let blue = Math.floor(Math.random() * 255);
+    let color = `rgb(${red},${blue},${green})`;
 
-addstd.onclick = function(){
-    let li = document.createElement('li');
-    li.innerText = prompt("Naam daalbe");  
-    ul.appendChild(li);
-    
-};
+    return color;
+}

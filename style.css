@@ -1,0 +1,23 @@
+#div{
+    height: 200px;
+    width: 500px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+    
+    
+}
+
+#h1{
+    margin-bottom: 20px;
+}
+
+#button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+body{
+    text-align: center;
+}
