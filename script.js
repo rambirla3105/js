@@ -13,9 +13,9 @@ function buttonClick(){
 
 button.onclick = buttonClick;
 
-button2.onclick = function(){
-    h1.innerText = "fhirse bc";
-};
+button2.addEventListener("click", function(){
+    h1.innerText = "heheheeee";
+});
 
 button3.onclick = function(){
     h1.innerText = "bas karle ganidye";
