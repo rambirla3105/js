@@ -17,9 +17,9 @@ button2.addEventListener("click", function(){
     h1.innerText = "heheheeee";
 });
 
-button3.onclick = function(){
-    h1.innerText = "bas karle ganidye";
-};
+button3.addEventListener("click", function(){
+    h1.innerText = "laalalalala";
+});
 
 addstd.onclick = function(){
     let li = document.createElement('li');
