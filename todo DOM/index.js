@@ -8,10 +8,17 @@ button.addEventListener("click", function(){
     
     let del = document.createElement("button");
     del.innerText = "delete";
-    del.classList.add("delete");
+    del.classList.add("button");
 
 
     ul.appendChild(item);
-    ul.appendChild(del);
+    item.appendChild(del);
     input.value = "";
+});
+
+ul.addEventListener("click", function(event){
+    let listItem = event.target.parentElement;
+    if(event.target.nodeName == "BUTTON"){
+        listItem.remove();
+    }
 });
