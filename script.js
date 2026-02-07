@@ -1,8 +1,8 @@
-let form = document.querySelector("form");
-form.addEventListener("submit", function(event){
-    event.preventDefault();
-    let user = document.querySelector("#user");
-    let pass = document.querySelector("#pass");
-    alert("Logged In")
-    console.log(`usename ${user.value} password: ${pass.value}`);
+let p = document.querySelector("p");
+let input = document.querySelector("input");
+let button = document.querySelector("button");
+
+input.addEventListener("input", function(){
+  console.log(input.value);
+  p.innerText = input.value;
 });
