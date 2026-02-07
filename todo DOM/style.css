@@ -1,0 +1,100 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+/* Heading */
+h1 {
+    color: #fff;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Input + button wrapper feel */
+input {
+    width: 280px;
+    padding: 12px 14px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+/* Add button */
+button[type="submit"] {
+    padding: 12px 18px;
+    background-color: #00c896;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #00b085;
+    transform: translateY(-2px);
+}
+
+/* Todo list container */
+ul {
+    list-style: none;
+    margin-top: 30px;
+    width: 360px;
+}
+
+/* Each todo item */
+li {
+    background-color: #fff;
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease;
+}
+
+/* Delete button */
+li .button {
+    background-color: #ff4d4f;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+li .button:hover {
+    background-color: #e04345;
+}
+
+/* Smooth entry animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
