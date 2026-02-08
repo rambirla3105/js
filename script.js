@@ -6,5 +6,4 @@ input.addEventListener("input", function(){
   console.log(input.value);
   p.innerText = input.value;
 });
-//commit 5sjnc
-asclnlkc c
+//commit 
