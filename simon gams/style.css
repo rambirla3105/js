@@ -1,0 +1,21 @@
+#button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+#btn1{
+    background-color: pink;
+}
+
+#btn2{
+    background-color: dark blue;
+}
+
+#btn3{
+    background-color: orange;
+}
+
+#btn4{
+    background-color: purple;
+}
