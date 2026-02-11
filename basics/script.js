@@ -13,6 +13,7 @@ function savetodb (data){
 let request = savetodb("ram");
 request.then(() => {
   console.log("promise completed");
+  console.log(request);
 });
 
 request.catch(() =>{
