@@ -1,9 +1,20 @@
-let p = document.querySelector("p");
-let input = document.querySelector("input");
-let button = document.querySelector("button");
+function savetodb (data){
+  return new Promise((resovle, reject) => {
+      let intSpeed = Math.floor(Math.random() * 10) +1;
 
-input.addEventListener("input", function(){
-  console.log(input.value);
-  p.innerText = input.value;
+      if(intSpeed > 4){
+          resovle("succes: saved");
+      } else{
+          reject("failed: not saved");
+      }
+  });
+}
+
+let request = savetodb("ram");
+request.then(() => {
+  console.log("promise completed");
 });
-//commit 
+
+request.catch(() =>{
+  console.log("promise Rejected");
+});
