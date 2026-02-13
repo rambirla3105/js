@@ -60,11 +60,71 @@ firstStep()
 
 //ASYNC FUNCTIONS::
 
-async function greet(){
-  return "Hello";
-}
+// async function greet(){
+//   return "Hello";
+// }
 
-greet()
-.then((result) => {
-  console.log("greet:", result);
-})
+// greet()
+// .then((result) => {
+//   console.log("greet:", result);
+// })
+
+// Await Key word
+
+// function getNum (){
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       let num = Math.floor(Math.random()*10) +1;
+//       console.log(num);
+//       resolve();
+//     }, 1000);
+
+    
+//   })
+// }
+
+// async function demo(){
+//   for(let i=1; i<=10; i++){
+//     await getNum();
+//   }
+// }
+
+//handeling rejections
+
+// function getNum (){
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       let num = Math.floor(Math.random()*10) +1;
+//       if(num == 3){
+//         reject(new Error("error found"));
+//         return;
+//       }else{
+//         console.log(num);
+
+//       resolve();
+//       }
+//     }, 1000);
+
+    
+//   })
+// }
+
+// async function demo(){
+//   try{
+//     for(let i=1; i<=10; i++){
+//     await getNum();
+//   }
+// }catch(err){
+//   console.log(err.message);
+// }
+
+// let a = 5;
+// console.log(`your numer is ${a}`);
+// }
+
+
+// JSON
+
+let jsonData = '{"fact":"A cat almost never meows at another cat, mostly just humans. Cats typically will spit, purr, and hiss at other cats.","length":116}';
+let validRes = JSON.parse(jsonData);
+console.log(validRes.fact);
