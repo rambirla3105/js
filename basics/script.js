@@ -128,3 +128,5 @@ firstStep()
 let jsonData = '{"fact":"A cat almost never meows at another cat, mostly just humans. Cats typically will spit, purr, and hiss at other cats.","length":116}';
 let validRes = JSON.parse(jsonData);
 console.log(validRes.fact);
+
+//api testing
