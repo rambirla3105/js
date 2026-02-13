@@ -13,7 +13,7 @@ body{
     width: 90;
     max-width: 470px;
     background: #22C1C3;
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
     color: #fff;
     margin: 100px, auto 0;
     border-radius: 20px;
@@ -41,7 +41,57 @@ body{
     font-size: 18px;
 }
 
-.search .button{
+.Search button{
     border: 0;
-    border-radius: 100px;
+    outline: 0;
+    border-radius: 50%;
+    background: #ebfffc;
+    height: 60px;
+    width: 60px;
+}
+
+.Search button img{
+    width: 16px;
+}
+
+.wheather-icon{
+    width: 170px;
+    margin-top: 30px;
+} 
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h1{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
 }
