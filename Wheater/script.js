@@ -1,1 +1,1 @@
-// logic 
+// logic of jaa script
